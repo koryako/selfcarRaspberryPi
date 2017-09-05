@@ -1,3 +1,4 @@
+
 https://github.com/priya-dwivedi
 
 
@@ -11,3 +12,6 @@ http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/imgproc/imgtrans/sob
 Canny
 
 http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html?highlight=canny#canny
+
+http://selfdrivingcars.mit.edu/resources
+
