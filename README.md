@@ -172,3 +172,31 @@ https://github.com/mbeyeler/opencv-machine-learning/blob/master/notebooks/11.04-
 结束语
 
 https://github.com/mbeyeler/opencv-machine-learning/blob/master/notebooks/12.00-Wrapping-Up.ipynb
+--------------
+https://github.com/tensorflow/models/tree/master/object_detection
+mobilenet
+
+https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html
+
+带有MobileNets的SSD(Single Shot Multibox Detector)
+
+带有Inception V2的SSD
+
+带有Resnet 101的R-FCN（Region-based Fully Convolutional Networks）
+
+带有Resnet 101的 Faster RCNN
+
+带有Inception Resnet v2的Faster RCNN
+
+https://cloud.google.com/blog/big-data/2017/06/training-an-object-detector-using-cloud-machine-learning-engine
+
+
+
+https://github.com/tensorflow/tensorflow/commit/055500bbcea60513c0160d213a10a7055f079312
+
+
+mobil net 
+https://github.com/tensorflow/models/tree/master/inception 准备数据
+https://github.com/zehaos/MobileNet
+
+https://github.com/balancap/SSD-Tensorflow
