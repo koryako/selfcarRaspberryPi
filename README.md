@@ -200,3 +200,8 @@ https://github.com/tensorflow/models/tree/master/inception 准备数据
 https://github.com/zehaos/MobileNet
 
 https://github.com/balancap/SSD-Tensorflow
+
+
+2017.9 
+
+https://github.com/udacity/CarND-Term1-Starter-Kit  环境配置
