@@ -1,0 +1,1 @@
+/Users/mac/anaconda/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o ../libserver.so.dylib -install_name @rpath/libserver.so.dylib CMakeFiles/server.so.dir/server.c.o 

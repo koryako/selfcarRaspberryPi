@@ -205,3 +205,6 @@ https://github.com/balancap/SSD-Tensorflow
 2017.9 
 
 https://github.com/udacity/CarND-Term1-Starter-Kit  环境配置
+
+
+http://blog.csdn.net/xukai871105/article/details/39255089 树莓派mqtt
