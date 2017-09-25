@@ -7,7 +7,7 @@
 #include<netinet/in.h>
 
 #define MAXLINE 4096
-#define IP "127.0.0.1"
+
 
 int main(int argc,char** argv)
 {
@@ -56,7 +56,7 @@ int main(int argc,char** argv)
    exit(0);
 }
 
-int go(int argc,char ip)
+int go(char* ip)
 {
     int sockfd,n,rec_len;
     char recvline[4096],sendline[4096];
