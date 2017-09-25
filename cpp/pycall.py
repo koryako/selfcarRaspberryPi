@@ -1,8 +1,8 @@
 import ctypes
 so = ctypes.cdll.LoadLibrary
-lib = so("./libpycallclass.so")
+lib = so("../build/libserver.dylib")
 
-print (lib.fact(100))
+print (lib.main())
 """
 /***gcc -o libpycall.so -shared -fPIC pycall.c*/ 
 #include <stdio.h> 

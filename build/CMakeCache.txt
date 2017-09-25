@@ -186,6 +186,9 @@ HELLOLIB_BINARY_DIR:STATIC=/Users/mac/Desktop/ppp/selfcarRaspberryPi/build
 HELLOLIB_SOURCE_DIR:STATIC=/Users/mac/Desktop/ppp/selfcarRaspberryPi
 
 //Dependencies for target
+client_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 server.so_LIB_DEPENDS:STATIC=
 
 //Dependencies for target

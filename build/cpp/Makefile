@@ -111,19 +111,61 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-cpp/CMakeFiles/server.so.dir/rule:
-	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f CMakeFiles/Makefile2 cpp/CMakeFiles/server.so.dir/rule
-.PHONY : cpp/CMakeFiles/server.so.dir/rule
+cpp/CMakeFiles/client.dir/rule:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f CMakeFiles/Makefile2 cpp/CMakeFiles/client.dir/rule
+.PHONY : cpp/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
-server.so: cpp/CMakeFiles/server.so.dir/rule
+client: cpp/CMakeFiles/client.dir/rule
 
-.PHONY : server.so
+.PHONY : client
 
 # fast build rule for target.
-server.so/fast:
-	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.so.dir/build.make cpp/CMakeFiles/server.so.dir/build
-.PHONY : server.so/fast
+client/fast:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/client.dir/build.make cpp/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+# Convenience name for target.
+cpp/CMakeFiles/server.dir/rule:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f CMakeFiles/Makefile2 cpp/CMakeFiles/server.dir/rule
+.PHONY : cpp/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: cpp/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.dir/build.make cpp/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+client.o: client.c.o
+
+.PHONY : client.o
+
+# target to build an object file
+client.c.o:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/client.dir/build.make cpp/CMakeFiles/client.dir/client.c.o
+.PHONY : client.c.o
+
+client.i: client.c.i
+
+.PHONY : client.i
+
+# target to preprocess a source file
+client.c.i:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/client.dir/build.make cpp/CMakeFiles/client.dir/client.c.i
+.PHONY : client.c.i
+
+client.s: client.c.s
+
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.c.s:
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/client.dir/build.make cpp/CMakeFiles/client.dir/client.c.s
+.PHONY : client.c.s
 
 server.o: server.c.o
 
@@ -131,7 +173,7 @@ server.o: server.c.o
 
 # target to build an object file
 server.c.o:
-	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.so.dir/build.make cpp/CMakeFiles/server.so.dir/server.c.o
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.dir/build.make cpp/CMakeFiles/server.dir/server.c.o
 .PHONY : server.c.o
 
 server.i: server.c.i
@@ -140,7 +182,7 @@ server.i: server.c.i
 
 # target to preprocess a source file
 server.c.i:
-	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.so.dir/build.make cpp/CMakeFiles/server.so.dir/server.c.i
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.dir/build.make cpp/CMakeFiles/server.dir/server.c.i
 .PHONY : server.c.i
 
 server.s: server.c.s
@@ -149,7 +191,7 @@ server.s: server.c.s
 
 # target to generate assembly for a file
 server.c.s:
-	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.so.dir/build.make cpp/CMakeFiles/server.so.dir/server.c.s
+	cd /Users/mac/Desktop/ppp/selfcarRaspberryPi/build && $(MAKE) -f cpp/CMakeFiles/server.dir/build.make cpp/CMakeFiles/server.dir/server.c.s
 .PHONY : server.c.s
 
 # Help Target
@@ -160,7 +202,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... server.so"
+	@echo "... client"
+	@echo "... server"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

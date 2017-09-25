@@ -2,4 +2,5 @@
 /Users/mac/Desktop/ppp/selfcarRaspberryPi/build/CMakeFiles/rebuild_cache.dir
 /Users/mac/Desktop/ppp/selfcarRaspberryPi/build/cpp/CMakeFiles/edit_cache.dir
 /Users/mac/Desktop/ppp/selfcarRaspberryPi/build/cpp/CMakeFiles/rebuild_cache.dir
-/Users/mac/Desktop/ppp/selfcarRaspberryPi/build/cpp/CMakeFiles/server.so.dir
+/Users/mac/Desktop/ppp/selfcarRaspberryPi/build/cpp/CMakeFiles/client.dir
+/Users/mac/Desktop/ppp/selfcarRaspberryPi/build/cpp/CMakeFiles/server.dir

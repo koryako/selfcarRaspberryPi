@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/mac/Desktop/ppp/selfcarRaspberryPi/cpp/server.c
+/Users/mac/Desktop/ppp/selfcarRaspberryPi/cpp/client.c
 stdio.h
 -
 stdlib.h
