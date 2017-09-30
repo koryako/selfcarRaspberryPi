@@ -58,7 +58,7 @@ int main()
         
     }
      close(socket_fd);
-     printf("hello");
+    
 return 0;
 }
 
