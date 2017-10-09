@@ -210,3 +210,72 @@ https://github.com/udacity/CarND-Term1-Starter-Kit  环境配置
 http://blog.csdn.net/xukai871105/article/details/39255089 树莓派mqtt
 
 https://github.com/udacity/CarND-LaneLines-P1/blob/master/P1.ipynb
+
+
+交通识别问题,行人识别，目标追踪
+
+目标检测
+1. 传统方法 
+a.2001 paul viola 和Micahel jones 鲁棒实时目标检测 的 viola-jones 框架
+
+b.梯度直方图 Hog 
+
+2.深度学习
+a. overFeat 利用卷积 多尺度窗口滑动
+b. r-cnn   选择性搜索 selective Search 提取可能目标；使用cnn 在该区域上提取特征；向量机分类
+c. fast-rcnn  选择性搜索，cnn 提取特征， 区域兴趣池化 Region of interest ,ROI; 反向传播做分类和边框回归
+d. yolo
+e. faster-rcnn   cnn 提取特征;regio Proosal network 根据物体的分数来输出可能的目标；区域兴趣池化 Region of interest ,ROI pooling; 反向传播做分类和边框回归
+f. SSd  在yolo 上改进，使用了多尺度特征图
+g。 R-fcn 使用了 Faster-Rcnn的架构
+https://tryolabs.com/blog/
+3.数据集
+imageNet
+coco
+Pascal VOC
+Oxford-IIIT Pet
+kitti Vision
+
+
+http://www.dev-c.com/nativedb/
+
+github.com/osrf/car_demo
+
+https://github.com/openai/roboschool
+
+gym.openai.com
+
+https://mujoco.org
+
+https://github.com/DartEnv/ddart-env
+
+https://github.com/openai/baselines
+
+
+目标跟踪
+
+http://www.cs.cityu.edu.hk/~yibisong/iccv17/index.html
+convolutional Residual learning for visual tracking
+
+
+pytorch  caffe2 cntk 之间模型转换用onnx格式
+github.com/onnx/onnx
+
+github.com/nottombrown/rl-teacher
+https://github.com/nottombrown/rl-teacher.git
+
+
+https://github.com/aleju/self-driving-truck
+
+https://pan.baidu.com/s/1pL9J4Cz  ros book
+
+https://github.com/qboticslabs/ros_robotics_projects
+
+https://cps-vo.org/group/CATVehicleTestbed/wiki
+
+github.com/tigerneil/deep-reinforcement-learning-family
+
+https://github.com/tigerneil/awesome-deep-rl
+
+https://github.com/facebookresearch/ELF 开源游戏平台
+
