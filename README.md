@@ -279,3 +279,5 @@ https://github.com/tigerneil/awesome-deep-rl
 
 https://github.com/facebookresearch/ELF 开源游戏平台
 
+https://github.com/tensorflow/models/blob/master/slim/nets/mobilenet_v1.md
+
