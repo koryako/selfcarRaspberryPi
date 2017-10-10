@@ -7,18 +7,20 @@ import cv2
 import math
 import time
 
-def gaussian_blur(img, kernel_size):
-    """Applies a Gaussian Noise kernel"""
-    return cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)
-def canny(img, low_threshold, high_threshold):
-    """Applies the Canny transform"""
-    return cv2.Canny(img, low_threshold, high_threshold)
 def grayscale(img):
     """Applies the Grayscale transform
     This will return an image with only one color channel
     but NOTE: to see the returned image as grayscale
     you should call plt.imshow(gray, cmap='gray')"""
-    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    return cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+
+def canny(img, low_threshold, high_threshold):
+    """Applies the Canny transform"""
+    return cv2.Canny(img, low_threshold, high_threshold)
+
+def gaussian_blur(img, kernel_size):
+    """Applies a Gaussian Noise kernel"""
+    return cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)
 
 def region_of_interest(img, vertices):
     """
@@ -39,16 +41,12 @@ def region_of_interest(img, vertices):
         
     #filling pixels inside the polygon defined by "vertices" with the fill color    
     cv2.fillPoly(mask, vertices, ignore_mask_color)
-    # plt.imshow(mask)
+    
     #returning the image only where mask pixels are nonzero
     masked_image = cv2.bitwise_and(img, mask)
     return masked_image
 
-left_x1 = 0.
-right_x1 = 0.
-left_x2 = 0.
-right_x2 = 0.
-def draw_lines(img, lines, color=[255, 0, 0], thickness=10):
+def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
     """
     NOTE: this is the function you might want to use as a starting point once you want to 
     average/extrapolate the line segments you detect to map out the full
@@ -65,58 +63,23 @@ def draw_lines(img, lines, color=[255, 0, 0], thickness=10):
     If you want to make the lines semi-transparent, think about combining
     this function with the weighted_img() function below
     """
-    
-    imshape = img.shape
-    left_count = 0.
-    right_count = 0.
-    global left_x1
-    global right_x1
-    global left_x2
-    global right_x2
-
-    left_x1_sum = 0.
-    left_x2_sum = 0.
-    right_x1_sum = 0.
-    right_x2_sum = 0.
-    
     for line in lines:
-        for x1, y1, x2, y2 in line:
-            if x2 != x1:
-                slope = (y2 - y1)/(x2 - x1)
-                if slope > 0.5:
-                    right_count += 1
-                    right_x1_sum += ((x2-x1)/(y2-y1))*(imshape[0]*0.6 - y1) + x1
-                    right_x2_sum += ((x2-x1)/(y2-y1))*(imshape[0] - y1) + x1
-                else:
-                    if slope < -0.5:
-                        left_count += 1
-                        left_x1_sum += ((x2 - x1) / (y2 - y1)) * (imshape[0]*0.6 - y1) + x1
-                        left_x2_sum += ((x2 - x1) / (y2 - y1)) * (imshape[0] - y1) + x1
+        for x1,y1,x2,y2 in line:
+            cv2.line(img, (x1, y1), (x2, y2), color, thickness)
 
+def draw_circle(img,lines, color=[0, 0, 255]):
+    for line in lines:
+        cv2.circle(img,(line[0],line[1]), 2, color, -1)
 
-    #for line in lines:
-    #    for x1, y1, x2, y2 in line:
-    #        cv2.line(img, (x1, y1), (x2, y2), color, thickness)
-    if right_count != 0:
-        right_x1 = right_x1_sum/right_count
-        right_x2 = right_x2_sum/right_count
-    cv2.line(img, (math.floor(right_x1), math.floor(imshape[0]*0.6)), ((math.floor(right_x2), imshape[0])), color, thickness)
-    if left_count != 0:
-        left_x1  = left_x1_sum/left_count
-        left_x2  = left_x2_sum/left_count
-    cv2.line(img, (math.floor(left_x1),  math.floor(imshape[0]*0.6)), ((math.floor(left_x2), imshape[0])),  color, thickness)
-	
-	
 def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap):
     """
-    `img` should be the output of a Canny transform.
-        
+    `img` should be the output of a Canny transform.        
     Returns an image with hough lines drawn.
     """
     lines = cv2.HoughLinesP(img, rho, theta, threshold, np.array([]), minLineLength=min_line_len, maxLineGap=max_line_gap)
-    line_img = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
-    draw_lines(line_img, lines)
-    return line_img
+    line_arr = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
+    #draw_lines(line_arr, lines)
+    return lines
 
 def weighted_img(img, initial_img, a=0.8, b=1., r=0.):
     """
