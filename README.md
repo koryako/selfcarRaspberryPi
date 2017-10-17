@@ -496,3 +496,12 @@ https://github.com/facebookresearch/ELF 开源游戏平台
 https://github.com/tensorflow/models/blob/master/slim/nets/mobilenet_v1.md
 
 
+问题一 
+cyclegan 学习深度信息
+A 数据集
+http://www.europe.naverlabs.com/Research/Computer-Vision/Proxy-Virtual-Worlds
+
+https://github.com/LMescheder/AdversarialVariationalBayes
+
+
+http://aaronsplace.co.uk/papers/jackson2017recon/ 平面头像到3d头像
