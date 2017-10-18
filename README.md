@@ -505,3 +505,6 @@ https://github.com/LMescheder/AdversarialVariationalBayes
 
 
 http://aaronsplace.co.uk/papers/jackson2017recon/ 平面头像到3d头像
+
+
+http://blog.csdn.net/ling3ye/article/details/51351115  使用Arduino与L298N(红板) 驱动直流电机
