@@ -508,3 +508,11 @@ http://aaronsplace.co.uk/papers/jackson2017recon/ 平面头像到3d头像
 
 
 http://blog.csdn.net/ling3ye/article/details/51351115  使用Arduino与L298N(红板) 驱动直流电机
+
+https://github.com/NicolleLouis/geneticAlgorithm/blob/master/passwordTuto 遗传算法
+
+http://rednuht.org/genetic_cars_2/ 进化游戏
+
+https://www.codingame.com/home 遗传比赛
+
+http://play.google.com/store/apps/details?id=com.keiwando.Evolution
