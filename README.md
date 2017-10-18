@@ -516,3 +516,5 @@ http://rednuht.org/genetic_cars_2/ 进化游戏
 https://www.codingame.com/home 遗传比赛
 
 http://play.google.com/store/apps/details?id=com.keiwando.Evolution
+
+https://arxiv.org/pdf/1708.07303.pdf 感知3d物体 3d特征 物理感知 交互
