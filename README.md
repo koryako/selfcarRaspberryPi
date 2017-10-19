@@ -522,3 +522,15 @@ https://arxiv.org/pdf/1708.07303.pdf 感知3d物体 3d特征 物理感知 交互
 http://blog.csdn.net/crzy_sparrow/article/details/7407604 光流测速
 
 http://blog.csdn.net/crzy_sparrow/article/details/7398904
+
+http://www.cnblogs.com/Leo_wl/p/5852010.html  neat
+
+https://github.com/FernandoTorres/NEAT  c++
+
+https://en.wikipedia.org/wiki/HyperNEAT
+
+https://github.com/CodeReclaimers/neat-python ok
+
+https://github.com/neat-python/neat-python
+
+https://github.com/koryako/neat neat api
