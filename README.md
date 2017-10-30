@@ -534,3 +534,21 @@ https://github.com/CodeReclaimers/neat-python ok
 https://github.com/neat-python/neat-python
 
 https://github.com/koryako/neat neat api
+
+jinwan
+git clone git@github.com:reinforceio/tensorforce.git
+
+
+https://github.com/rlcode/reinforcement-learning
+
+distributional_perspective_on_RL
+
+DDPG-keras-torcs
+
+BDD_Driving_Model
+
+C51DQN
+
+baselines
+
+TensorFlow Agents
