@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+1. 卡尔曼公式 http://bilgin.esme.org/BitsAndBytes/KalmanFilterforDummies
+https://blog.csdn.net/heyijia0327/article/details/44033751  python + opencv: kalman 跟踪
 http://www.cnblogs.com/gaoxiang12/p/5175118.html  rgb-d salm
 
+https://blog.csdn.net/heyijia0327/article/details/17487467
 
+
+https://blog.csdn.net/heyijia0327/article/details/17487467
 
 https://blog.csdn.net/liaoshenglan/article/details/78484851
 

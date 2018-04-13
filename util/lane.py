@@ -7,6 +7,12 @@ import cv2
 import math
 import time
 
+
+
+def draw_circle(img,lines, color=[0, 0, 255]):
+    for line in lines:
+        cv2.circle(img,(line[0],line[1]), 2, color, -1)
+        
 def gaussian_blur(img, kernel_size):
     """Applies a Gaussian Noise kernel"""
     return cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)

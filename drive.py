@@ -4,10 +4,15 @@ import cv2
 import pyautogui
 from directkeys import PressKey, W, A, S, D
 
-for i in list(range(4))[::-1]:
+
+
+def delay():
+    for i in list(range(4))[::-1]:
         print(i+1)
         time.sleep(1)
+
 def main():
+    delay()
     last_time=time.time()
     while(True):
         PressKey(W)
@@ -20,6 +25,12 @@ def main():
         if cv2.waitKey(25) & 0xff==ord('q'):
              cv2.destroyAllWindows()
              break
+
+
+def draw_lines(img,lines):
+    for line in lines:
+        coords = line[0]
+        cv2.line(img, (coords[0], coords[1]), (coords[2], coords[3]), [255,255,255], 3)
 
 def edgesDetection(image):
     original_image=image 
@@ -47,10 +58,12 @@ def roi(img, vertices):
     return masked
 
 
-def draw_lines(img,lines):
-    for line in lines:
-        coords = line[0]
-        cv2.line(img, (coords[0], coords[1]), (coords[2], coords[3]), [255,255,255], 3)
+
 
 if __name__ == '__main__':
-    main()
+    #main()
+    image=cv2.imread("img/solidWhiteRight.jpg")
+    processed_img=cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+    plt.imshow(processed_img)
+    plt.show()
+    #edgesDetection(image)
