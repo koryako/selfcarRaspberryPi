@@ -1,5 +1,26 @@
 <<<<<<< HEAD
+http://www.cnblogs.com/gaoxiang12/p/5175118.html  rgb-d salm
 
+
+
+https://blog.csdn.net/liaoshenglan/article/details/78484851
+
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247486559&idx=5&sn=c3170e4254db6072199687c4709fa6aa&chksm=e8d3bb2ddfa4323b3b9e7f292a5ea315c5bea9b3ebae9959cbbe2deae6ee4dcb9b37b80e4cce&mpshare=1&scene=1&srcid=0627otxvbfmlbxw8jN2ko3R2#rd]
+
+https://mp.weixin.qq.com/s?__biz=MjM5ODU3OTIyOA==&mid=2650670095&idx=3&sn=34e8d76f9e8fec2b46209c06ecc7351d&chksm=bec2397c89b5b06a5b4433cb8309b6a04a76a8dd9bee5a5797fac8d73fe8747ce66d45d795e4&mpshare=1&scene=1&srcid=0313lP98KcXrSZQzBxmK7grL#rd]
+
+https://github.com/jeasinema/VoxelNet-tensorflow
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650729880&idx=4&sn=d1f30057a9235b54a953989438d3576b&chksm=871b29e6b06ca0f01758f366aed1c0ec24b2f8c5704c1282ecfdefcc824fb614a5dfd65768e8&mpshare=1&scene=1&srcid=0816R7TVCZgDoe6FcO2M49hz#rd]
+
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247487991&idx=1&sn=e75d56296b16b5349b5055044849d416&chksm=e8d3a685dfa42f939b4f1ab385a1c73733e2c4f48515a35b518f320c538fb2622f1144bdf3a6&mpshare=1&scene=1&srcid=0816al7xMC4UO6yxsMhF9Myi#rd]
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650740213&idx=2&sn=43e07e08d3f6ac5cbd8ef79218df7667&chksm=871ad18bb06d589dfef295be1a3ac7a6d1423f1df281a2fb153a5dbbd73abf7ba0dc7f2294e5&mpshare=1&scene=1&srcid=0403vwSmNPpgYku2MR5Epbnd#rd]
+
+https://mp.weixin.qq.com/s?__biz=MjM5ODU3OTIyOA==&mid=2650669314&idx=2&sn=bd4e825f3cda99f6b7641fbc61115038&chksm=bec23c7189b5b567ef78552dbdac26e2368b93bae8721f8fab6b50bc1a6b0ec20f4a3b432f8f&mpshare=1&scene=1&srcid=0122eFcMymMOKDz4NP6SiEmx#rd]
+
+
+https://github.com/koryako/selfcarRaspberryPi
 https://github.com/priya-dwivedi
 
 
