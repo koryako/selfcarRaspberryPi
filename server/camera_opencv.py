@@ -22,7 +22,8 @@ class Camera(BaseCamera):
         while True:
             # read current frame
             _, img = camera.read()
-            img = imutils.resize(img, width=500)
+            cv2.resize(img,(img.shape[1]//2,img.shape[0]//2),interpolation=cv2.INTER_CUBIC)
+            #img = imutils.resize(img, width=500)
             #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             #高斯滤波
             #gray = cv2.blur(gray,(kerne,kerne))
