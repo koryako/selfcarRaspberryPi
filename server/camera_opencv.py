@@ -51,4 +51,4 @@ class Camera(BaseCamera):
                     #(x, y, w, h) = cv2.boundingRect(c)#计算轮廓线的外框，为当前帧画上外框
                     #cv2.rectangle(img,(x,y),(x+w,y+h), (0, 255, 0),1)# 更新文本
             #cv2.putText(img, "action-detector", (10, 20),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
-            yield cv2.imencode('.jpg', img)[1].tobytes()
+            yield numpy.array(cv2.imencode('.jpg', img)[1]).tobytes()
