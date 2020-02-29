@@ -1,8 +1,8 @@
 from flask import Flask, render_template, Response
  
 # Raspberry Pi camera module (requires picamera package, developed by Miguel Grinberg)
-from camera_pi import Camera
- 
+#from camera_pi import Camera
+from camera_opencv import Camera
 app = Flask(__name__)
  
 @app.route('/')
