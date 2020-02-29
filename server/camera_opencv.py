@@ -4,6 +4,7 @@ import cv2
 from base_camera import BaseCamera
 import imutils
 import time
+import numpy
 class Camera(BaseCamera):
     video_source = 0
     @staticmethod
