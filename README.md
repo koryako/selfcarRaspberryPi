@@ -1,3 +1,35 @@
+
+##安装MJPG-streamer
+1. 安装依赖
+sudo apt-get updatesudo 
+sudo apt-get install subversion
+sudo apt-get install libjpeg8-dev
+sudo apt-get install imagemagick
+sudo apt-get install libv4l-dev
+sudo apt-get install cmake
+sudo apt-get install git
+
+
+2. 下载项目
+
+sudo git clone github.com/jacksonliam/mjpg-streamer.git 
+cd mjpg-streamer/mjpg-streamer-experimentalsudo 
+make all
+sudo make install
+
+指令启动普通USB摄像头指令：
+./mjpg_streamer -i "./input_uvc.so" -o "./output_http.so -w ./www"  
+启动树莓派专用摄像头RaspiCamera的指令：
+./mjpg_streamer -i "./input_raspicam.so" -o "./output_http.so -w ./www"
+https://blog.csdn.net/LIEVE_Z/article/details/79551628
+https://blog.csdn.net/m0_38106923/article/details/86562451
+有一个现成的轮子，pistreaming：
+sudo apt-get install libav-tools git python3-picamera python3-ws4py
+git clone https://github.com/waveform80/pistreaming.git
+$ cd pistreaming
+$ python3 server.py
+
+https://github.com/yueritian/RaspberryPi_SmartCarV1/blob/master/templates/index.html 控制
 <<<<<<< HEAD
 
 
