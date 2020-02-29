@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from flask import Flask, render_template, Response
  
 # Raspberry Pi camera module (requires picamera package, developed by Miguel Grinberg)
