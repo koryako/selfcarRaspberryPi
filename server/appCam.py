@@ -10,7 +10,7 @@ sys.path.append("..")
 from Controller.car import car
 #from camera_opencv import Camera
 app = Flask(__name__)
- 
+car=car()
 @app.route('/')
 def index():
     """Video streaming home page."""
