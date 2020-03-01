@@ -13,7 +13,7 @@ import time
 class WheelModule:
 
     # 初始化
-    def __init__(self, PIN_L,PIN_IN1_L, PIN_IN2_L,PIN_R ,PIN_IN1_R, PIN_IN2_R):
+    def __init__(self, PIN_IN1_L, PIN_IN2_L,PIN_IN1_R, PIN_IN2_R):
         print('Wheel Module In Progress')
         GPIO.setmode(GPIO.BOARD)
         self.PIN_IN1_L = PIN_IN1_L
@@ -24,10 +24,12 @@ class WheelModule:
         GPIO.setup(self.PIN_IN2_L, GPIO.OUT)
         GPIO.setup(self.PIN_IN1_R, GPIO.OUT)
         GPIO.setup(self.PIN_IN2_R, GPIO.OUT)
+        """
         self.motor_L = GPIO.PWM(PIN_L,100)
         self.motor_L.start(100)
         self.motor_R = GPIO.PWM(PIN_R,100)
         self.motor_R.start(100)
+        """
         
     # 前进的代码
     def forward(self):
@@ -43,7 +45,7 @@ class WheelModule:
         GPIO.output(self.PIN_IN1_R, GPIO.LOW)
         GPIO.output(self.PIN_IN2_R, GPIO.HIGH)
     
-    
+    """
     def forward_S(self,speed):
         if speed>0 :
             if speed > 100 :
@@ -55,7 +57,7 @@ class WheelModule:
             GPIO.output(self.PIN_IN1_R, GPIO.HIGH)
             GPIO.output(self.PIN_IN2_R, GPIO.LOW)
         
-            
+    """     
             
             
 
