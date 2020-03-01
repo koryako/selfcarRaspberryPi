@@ -1,3 +1,48 @@
+
+
+import threading
+import os
+
+
+
+from WheelModule import *
+
+class car:
+    def __init__(self):
+        # 初始化智能小车使用控制脚--------------
+        self.WHEEL_L_IN1 = 16           # 14：左轮
+        self.WHEEL_L_IN2 = 18           # 15：左轮
+        self.WHEEL_R_IN1 = 35          # 16：右轮
+        self.WHEEL_R_IN2 = 37           # 17：右轮
+        self.wheelModule = WheelModule(self.WHEEL_L_IN1, self.WHEEL_L_IN2, self.WHEEL_R_IN1, self.WHEEL_R_IN2)
+    
+
+    
+    # 前进的代码
+    def forward(self):
+        self.wheelModule.forward()
+
+    # 后退
+    def backOff(self):
+        self.wheelModule.backOff()
+
+    # 左转
+    def leftTurn(self):
+        self.wheelModule.leftTurn()
+
+    # 右转
+    def rightTurn(self):
+        self.wheelModule.rightTurn()
+
+    # 停车
+    def stop(self):
+        self.wheelModule.stop()
+
+    
+
+    
+
+"""
 import RPi.GPIO as GPIO
 import time
 class Wheel:
@@ -64,3 +109,4 @@ def cleanup():
     GPIO.cleanup()
 
 execute('forward')
+"""

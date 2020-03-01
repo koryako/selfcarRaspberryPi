@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, Response
- 
+
+
 # Raspberry Pi camera module (requires picamera package, developed by Miguel Grinberg)
 from camera_pi import Camera
+import sys
+sys.path.append("..") 
+from Controller import car
 #from camera_opencv import Camera
 app = Flask(__name__)
  
