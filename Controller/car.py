@@ -1,10 +1,7 @@
-
+# -*- coding: utf-8 -*-
 
 import threading
 import os
-
-
-
 from WheelModule import *
 
 class car:
