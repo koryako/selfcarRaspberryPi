@@ -7,7 +7,7 @@ from flask import Flask, render_template, Response
 from camera_pi import Camera
 import sys
 sys.path.append("..") 
-from Controller import car
+from Controller.car import car
 #from camera_opencv import Camera
 app = Flask(__name__)
  
