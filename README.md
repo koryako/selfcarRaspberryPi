@@ -23,6 +23,9 @@ sudo make install
 ./mjpg_streamer -i "./input_raspicam.so" -o "./output_http.so -w ./www"
 https://blog.csdn.net/LIEVE_Z/article/details/79551628
 https://blog.csdn.net/m0_38106923/article/details/86562451
+
+
+https://blog.csdn.net/qq_41204464/article/details/83098603
 有一个现成的轮子，pistreaming：
 sudo apt-get install libav-tools git python3-picamera python3-ws4py
 git clone https://github.com/waveform80/pistreaming.git
@@ -30,6 +33,11 @@ $ cd pistreaming
 $ python3 server.py
 
 https://github.com/yueritian/RaspberryPi_SmartCarV1/blob/master/templates/index.html 控制
+
+资料 https://www.cnblogs.com/darkcircle/articles/9327537.html
+https://blog.csdn.net/u011426247/article/details/80551749 c++s
+https://blog.csdn.net/u012736685/article/details/77131633 c++s
+https://blog.csdn.net/Mr_Curry/article/details/52347797
 <<<<<<< HEAD
 
 
